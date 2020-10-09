@@ -48,7 +48,7 @@ const CartScreen = ({ match, location, history }) => {
         ) : (
           <ListGroup variant="flush">
             {cartItems.map((item) => (
-              <ListGroup.Item key={item.productId}>
+              <ListGroup.Item key={item.product}>
                 <Row>
                   <Col md={2}>
                     <Image src={item.image} alt={item.name} fluid rounded />
@@ -56,7 +56,7 @@ const CartScreen = ({ match, location, history }) => {
                   <Col md={3}>
                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                   </Col>
-                  <Col md={2}>{item.price}</Col>
+                  <Col md={2}>${item.price}</Col>
                   <Col md={2}>
                     <Form.Control
                       as="select"
