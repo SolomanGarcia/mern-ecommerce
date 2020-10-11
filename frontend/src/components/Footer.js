@@ -7,7 +7,11 @@ const Footer = () => {
       <Container>
         <Col className="text-center py-3">
           Copyright &copy;{" "}
-          <a href="https://solomanGarcia.com" target="_blank">
+          <a
+            href="https://solomanGarcia.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Soloman Garcia
           </a>
         </Col>
