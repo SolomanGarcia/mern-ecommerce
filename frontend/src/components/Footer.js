@@ -5,7 +5,12 @@ const Footer = () => {
   return (
     <footer>
       <Container>
-        <Col className="text-center py-3">Copyright &copy; ProShop</Col>
+        <Col className="text-center py-3">
+          Copyright &copy;{" "}
+          <a href="https://solomanGarcia.com" target="_blank">
+            Soloman Garcia
+          </a>
+        </Col>
       </Container>
     </footer>
   );
