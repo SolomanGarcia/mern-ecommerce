@@ -53,7 +53,7 @@ const ProductScreen = ({ history, match }) => {
   };
 
   const submitHandler = (e) => {
-    e.prevent.default();
+    e.preventDefault();
     dispatch(createProductReview(match.params.id, { rating, comment }));
   };
 
