@@ -44,6 +44,8 @@ const OrderScreen = ({ match, history }) => {
     order.itemsPrice = addDecimals(
       order.orderItems.reduce((acc, item) => acc + item.price * item.qty, 0)
     );
+
+    order.taxPrice = addDecimals(Number((0.15 * order.itemsPrice).toFixed(2)));
   }
 
   useEffect(() => {
