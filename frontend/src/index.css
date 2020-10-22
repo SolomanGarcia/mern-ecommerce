@@ -25,6 +25,7 @@ h3 {
 .carousel-item-prev,
 .carousel-item.active {
   display: flex;
+  background-color:#282828;
 }
 .carousel-caption {
   position: absolute;
